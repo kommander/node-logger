@@ -9,7 +9,7 @@
     "type" : "git",
     "url"  : "http://github.com/databyte/node-logger.git"
   }
-, "main"         : "./lib/opts"
+, "main"         : "./lib/logger"
 , "engines"      : { "node" : ">=0.1.90" }
 , "scripts"      : {}
 , "dependencies" : {}
