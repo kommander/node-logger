@@ -17,10 +17,13 @@ Each of these log levels has its own method on the logging instance. You can set
 By default, a logger writes to STDOUT, but given a writeable file path, it will log directly to a file.
 
 ### Instantiation:
+Remember you must link to the root directory of the module not the lib directory
 
     // node/common.js style 
-    var logger = require('./logger').createLogger(); // logs to STDOUT
-    var logger = require('./logger').createLogger('development.log'); // logs to a file
+    var logger = require('./node-logger').createLogger(); // logs to STDOUT
+    var logger = require('../node-logger').createLogger('development.log'); // logs to a file
+
+the file option will write to the directory node is called from
 
 ### Logging:
 
